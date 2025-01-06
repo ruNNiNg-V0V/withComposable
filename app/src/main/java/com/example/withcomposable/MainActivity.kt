@@ -38,10 +38,16 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+// 미리보기
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     WithComposableTheme {
-        Greeting("Android")
+        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+            Greeting(
+                name = "Android",
+                modifier = Modifier.padding(innerPadding)
+            )
+        }
     }
 }
