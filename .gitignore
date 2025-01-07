@@ -17,3 +17,6 @@ settings.gradle.kts
 gradle/libs.versions.toml
 .idea/vcs.xml
 .idea/deploymentTargetSelector.xml
+.idea/deploymentTargetSelector.xml
+gradle/libs.versions.toml
+settings.gradle.kts
