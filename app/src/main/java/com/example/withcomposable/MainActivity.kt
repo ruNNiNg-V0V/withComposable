@@ -23,7 +23,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             WithComposableTheme {
-                // 리니어 레이아웃
+                kakaoPassCompose()
+                /*
                 Column(modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center)
@@ -32,6 +33,7 @@ class MainActivity : ComponentActivity() {
                     theImage("lake_1")
                     theText("Lake Louise, AB, 캐나다")
                 }
+                */
             }
         }
     }
@@ -60,7 +62,8 @@ fun theImage(src : String){
 fun GreetingPreview() {
     WithComposableTheme {
         WithComposableTheme {
-            // 리니어 레이아웃
+            kakaoPassCompose()
+            /*
             Column(modifier = Modifier.fillMaxSize(),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center)
@@ -69,6 +72,7 @@ fun GreetingPreview() {
                 theImage("lake_1")
                 theText("Lake Louise, AB, 캐나다")
             }
+            */
         }
     }
 }
